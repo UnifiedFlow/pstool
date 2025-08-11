@@ -1,6 +1,7 @@
 function clearButtons() {
   document.querySelectorAll("button").forEach((button) => {
     button.removeAttribute("disabled");
+    button.color = 'red';
   });
 }
 
@@ -25,3 +26,5 @@ observer.observe(document.body, {
   childList: true,
   subtree: true,
 });
+
+clearButtons();
