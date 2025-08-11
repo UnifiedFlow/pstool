@@ -1,7 +1,6 @@
 function clearButtons() {
   document.querySelectorAll("button").forEach((button) => {
     button.removeAttribute("disabled");
-    button.color = 'red';
   });
 }
 
